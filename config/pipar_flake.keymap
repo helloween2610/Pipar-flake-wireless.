@@ -29,7 +29,7 @@
 
             display-name = "default";
             bindings = <
-&tog 1           &bt BT_NXT        &kp C_MUTE
+&to 1            &bt BT_NXT        &kp C_MUTE
 &mt C_PREV C_RW  &kp C_PLAY_PAUSE  &mt C_NEXT C_FF
 &kp C_REPEAT     &none             &kp C_SHUFFLE
             >;
@@ -45,12 +45,12 @@
 
             display-name = "function";
             bindings = <
-&tog 0             &kp C_SLEEP    &kp C_MUTE
+&to 0              &kp C_SLEEP    &kp C_MUTE
 &kp RS(F8)         &kp F6         &kp F7
 &kp LA(LS(LC(E)))  &kp LA(LS(E))  &kp RS(F6)
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 };
