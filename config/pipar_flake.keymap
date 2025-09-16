@@ -45,9 +45,9 @@
 
             display-name = "function";
             bindings = <
-&to 0              &kp C_SLEEP    &kp C_MUTE
-&kp RS(F8)         &kp F6         &kp F7
-&kp LA(LS(LC(E)))  &kp LA(LS(E))  &kp RS(F6)
+&to 0          &kp C_SLEEP  &kp C_MUTE
+&kp RS(F8)     &kp F6       &kp F7
+&kp LA(LS(E))  &none        &kp RS(F6)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
