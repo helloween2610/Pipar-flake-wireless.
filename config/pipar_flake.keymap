@@ -21,7 +21,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Music {
+        iPhone {
             // ---------------------------//
             // | Q    | W     | ENCODER | //
             // | A    | S     | D       | //
@@ -37,20 +37,15 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        Design {
-            // --------------------------- //
-            // | BT_CLR | none | ENCODER | //
-            // | BT_0   | BT_1 | BT_2    | //
-            // | BT_3   | BT_4 | trans   | //
-
-            display-name = "function";
+        IEM {
+            display-name = "default";
             bindings = <
-&to 0          &kp C_SLEEP  &kp C_MUTE
-&kp RS(F8)     &kp F6       &kp F7
-&kp LA(LS(E))  &none        &kp RS(F6)
+&to 0            &bt BT_NXT        &kp C_MUTE
+&mt C_PREV C_RW  &kp C_PLAY_PAUSE  &mt C_NEXT C_FF
+&kp C_REPEAT     &none             &kp C_SHUFFLE
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_FF C_RW>;
         };
     };
 };
