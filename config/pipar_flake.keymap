@@ -30,7 +30,7 @@
             display-name = "Volume";
             bindings = <
 &kp C_SLEEP      &bt BT_NXT        &kp C_MUTE
-&kp K_PREVIOUS   &kp C_PLAY_PAUSE  &kp K_NEXT
+&kp C_RW         &kp C_PLAY_PAUSE  &kp C_FF
 &mt C_PREV C_RW  &kp C_POWER       &mt C_NEXT C_FF
             >;
 
